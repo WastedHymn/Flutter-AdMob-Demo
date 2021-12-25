@@ -53,7 +53,7 @@ class QuizManager {
 
   void checkAnswer(String answer) {
     bool correct = _drawing.word == answer.toLowerCase();
-    
+
     if (correct) {
       _correctAnswers++;
       if (!_isFinalLevel()) {
@@ -69,7 +69,6 @@ class QuizManager {
     _isHintUsed = true;
     _disclosedLettersCnt++;
     _clue = _generateClue();
-    print(_clue);
 
     listener?.onClueUpdated(_clue);
   }

@@ -13,7 +13,7 @@
 # limitations under the License.
 
 name: awesome_drawing_quiz
-description: Sample app for &#x27;Adding AdMob Ads to a Flutterr app&#x27; Codelab.
+description: Sample app for &#x27;Adding AdMob Ads to a Flutter app&#x27; Codelab.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -25,7 +25,8 @@ dependencies:
     sdk: flutter
   google_fonts: ^2.0.0
 
-  # TODO: Add google_mobile_ads as a dependency
+  # COMPLETE: Add google_mobile_ads as a dependency
+  google_mobile_ads: ^0.13.0
 
 dev_dependencies:
   flutter_test:

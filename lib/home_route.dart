@@ -15,7 +15,8 @@
 import 'package:awesome_drawing_quiz/app_theme.dart';
 import 'package:flutter/material.dart';
 
-// TODO: Import google_mobile_ads.dart
+// COMPLETE: Import google_mobile_ads.dart
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class HomeRoute extends StatefulWidget {
   @override
@@ -81,9 +82,9 @@ class _HomeRouteState extends State<HomeRoute> {
     );
   }
 
-  // TODO: Change return type to Future<InitializationStatus>
-  Future<void> _initGoogleMobileAds() {
+  // COMPLETE: Change return type to Future<InitializationStatus>
+  Future<InitializationStatus> _initGoogleMobileAds() {
     // TODO: Initialize Google Mobile Ads SDK
-    return Future.value({});
+    return MobileAds.instance.initialize();
   }
 }
